@@ -14,7 +14,7 @@ body{
 }
 
 .sidebar{
-   z-index: 1;
+    z-index: 1;
     position: fixed;
     width: 270px;
     left: -270px;
@@ -113,10 +113,10 @@ nav a {
 }
 article{
   width: 92,5%;
-  margin: auto;
+  margin:0 auto;
 }
 #frontimg{
-  margin-top: 3px;
+  margin-top: 30px;
   border-radius: 5px;
 }
 .Tickets{
@@ -147,12 +147,55 @@ h2{
 
 .title {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 figure{
-    margin-bottom: 40px;
+  margin: 30px auto 30px;
+  height: 70vh;
+  width: 75vw;
+  background-size: cover;
+  animation-name: fotoslider;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fotoslider {
+  0%{
+    background-image: url("../img/Slides1.jpeg");
+  }
+  10%{
+    background-image: url("../img/RijksMuseum.png");
+  }
+  20%{
+    background-image: url("../img/geschiedenis.jpeg");
+  }
+  30%{
+    background-image: url("../img/RijksMuseum.png");
+  }
+  40%{
+    background-image: url("../img/geschiedenis.jpeg");
+  }
+  50%{
+    background-image: url("../img/RijksMuseum.png");
+  }
+  60%{
+    background-image: url("../img/geschiedenis.jpeg");
+  }
+  70%{
+    background-image: url("../img/RijksMuseum.png");
+  }
+  80%{
+    background-image: url("../img/geschiedenis.jpeg");
+  }
+  90%{
+    background-image: url("../img/RijksMuseum.png");
+  }
+  100%{
+    background-image: url("../img/geschiedenis.jpeg");
+  }
 }
 
 img{
@@ -160,20 +203,12 @@ img{
 }
 
 .geschiedenis{
+    font-size: 150%;
     margin-top: 10px;
     padding: 10px;
     border: 4px solid black;
     border-radius: 5px;
-    background-color: rgb(94, 148, 179);
-}
-
-.slides{
-    margin-top: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    width: 50%;
-    border-radius: 5px;
+    background-color: rgb(21, 134, 199);
 }
 
 .mid-left{
@@ -203,6 +238,8 @@ footer{
     align-items: center;
     height: 50px;
     background-color: #262626;
+    padding: 10px 10px 0px 10px;
+    width: 100%;
 }
 
 footer > p{
@@ -210,35 +247,3 @@ footer > p{
     margin: 0 auto;
     padding-left: 40px;
 }
-
-@media(max-width : 860px){
-    .sidebar{
-      height: auto;
-      width: 70px;
-      left: 0;
-      margin: 100px 0;
-    }
-    header,#btn,#cancel{
-      display: none;
-    }
-    span{
-      position: absolute;
-      margin-left: 23px;
-      opacity: 0;
-      visibility: hidden;
-    }
-    .sidebar a{
-      height: 60px;
-    }
-    .sidebar a i{
-      margin-left: -10px;
-    }
-    a:hover {
-      width: 250px;
-      background: inherit;
-    }
-    .sidebar a:hover span{
-      opacity: 1;
-      visibility: visible;
-    }
-  }
