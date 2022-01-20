@@ -10,7 +10,7 @@ body{
     font-size: 16px;
     width: 100%;
     font-family: sans-serif;
-    background-color: #DFCFBE;
+    background-color: #34568B;
 }
 
 .sidebar{
@@ -70,7 +70,7 @@ label #btn,label #cancel{
   color: white;
   border-radius: 5px;
   border: 1px solid #ffffff;
-  margin:18px 20px;
+  margin:9px 9px;
   font-size: 29px;
   background: #262626;
   height: 45px;
@@ -90,19 +90,19 @@ label #cancel{
 }
 
 #check:checked ~ label #btn{
-  margin-left: 300px;
+  margin-left: 280px;
   opacity: 0;
   visibility: hidden;
 }
 
 #check:checked ~ label #cancel{
-  margin-left: 300px;
+  margin-left: 280px;
   opacity: 1;
   visibility: visible;
 }
 
 nav {
-  height: 80px;
+  height: 65px;
   background-color: #222831;
   overflow: hidden;
   border-bottom: 3px solid black;
@@ -113,7 +113,7 @@ nav a {
   float: right;
   color: #f2f2f2;
   text-align: center;
-  padding: 21px 2vw;
+  padding: 13px 2vw;
   text-decoration: none;
   font-size: 30px;
   border-left: 3px solid black;
@@ -123,8 +123,9 @@ article{
   margin:0 auto;
 }
 #frontimg{
+  border: solid 7px rgb(48, 48, 48);
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 .Tickets{
   background-color: rgb(94, 148, 179);
@@ -133,21 +134,56 @@ h1{
   font-size: 9vw;
 }
 
+img{
+  width: 92.5%;
+}
+
+p{
+  margin-bottom: 20px;
+}
+
 h2{
   margin-bottom: 30px;
   font-size: 5vw;
   color: white;
   border-bottom: solid black 2px;
 }
+
+h3{
+  font-size: 1.5vw;
+  color: #ffff;
+  margin: 0 0 10px 0;
+}
+
 .geschiedenis{
-  font-size: 150%;
+  display: flex;
+  font-size: 1.3vw;
   margin-top: 10px;
-  padding: 10px;
+  padding: 20px 85px;
   position: relative;
-  width:92.5%;
   margin:0 auto;
   border-radius: 3px solid black;
 }
+
+.geschiedenisvlak1{
+  color: rgb(160, 160, 160);
+  padding-right: 20px;
+  border-right: solid 1px black;
+
+}
+
+.geschiedenisvlak2{
+  color: rgb(160, 160, 160);
+  padding-left: 20px;
+  border-left: solid 1px black;
+}
+
+.geschiedenisImage{
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
 .container {
   position: relative;
   text-align: center;
@@ -208,22 +244,15 @@ h2{
   }
 }
 
-img{
-  width: 92.5%;
-}
-.slides{
-  margin: 0 auto;
-  width: 92.5%;
-}
-.route{
+.route,.slides,.geschiedenisTitle{
   margin: 0 auto;
   width: 92.5%;
 }
 
 #map{
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  height: 45vw;
+  object-fit: contain;
 }
 
 .mid-left{
@@ -249,18 +278,66 @@ img{
 }
 
 footer{
-  position:relative;
   display: flex;
-  align-items: center;
-  height: 50px;
+  margin-top: 9px;
   bottom: 0;
   background-color: #262626;
-  padding: 10px 10px 0px 10px;
+  padding: 10px;
   width: 100%;
+}
+.socialmedia,.infoc{
+  text-align: left;
+  display: block;
+  margin: 10px;
+  padding: 10px 5px;
+  width: 210px;
+  height: 100px;
+  background-color: #262626;
+  color: white;
+  border: solid white 2px;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+.infoc{
+  background-color: white;
+  color: #1b1b1b;
+}
+
+.sociallink.active,.sociallink:hover{
+  border-left: none;
 }
 
 footer > p{
-  width: 60vw;
+  width: 90vw;
   margin: 0 auto;
   padding-left: 40px;
+}
+@media screen and (max-width:1000px) {
+  h2{
+    font-size: 10vw;
+    padding: 10px 0 3px 0;
+    margin-bottom: 0;
+  }
+  .geschiedenis{
+    padding: 10px 20px;
+    padding: 0;
+    display: inline;
+    font-size: 1.5vw;
+  }
+
+  .geschiedenisvlak2, .geschiedenisvlak1{
+    padding: 10px 0;
+    margin: 0 auto;
+    border: none;
+    width: 90vw;
+  }
+}
+@media screen and (max-width:800px) {
+  h3{
+    font-size: 5vw;
+  }
+  .geschiedenis{
+    font-size: 4vw;
+  }
 }
