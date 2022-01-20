@@ -1,5 +1,7 @@
 # museum-online
+gemaakt door
 
-Jeroen heeft ons geholpen met git.
-Ik (Brayden) heb een branch aangemaakt 
-Ik (Roan) heb een branch aangemaakt 
+Brayden Bos
+Roan Bulten
+
+[RijksMuseum-online](http://32762.hosts1.ma-cloud.nl/rijksmuseum/NL/)
