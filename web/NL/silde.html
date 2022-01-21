@@ -45,10 +45,136 @@
           <span>ContactInfo</span>
         </a>
         </div>
-              <article>
             <nav>
                 <a href="../EN/index.html">EN</a>
                 <a class="Tickets" href="Tickets">Tickets</a>
             </nav>
+        <script src="script.js"></script>
+<div class="slideshow-container">
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/1987861--Juliette-Mommersteeg/verzamelingen/tentoonstelling">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img class="slidesimg" src="../img/slide1.jpeg" style="width:100%">
+    <div class="text">Juliette Mommersteeg</div>
+  </div>
+  </a>
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/2302958--Jenny-/verzamelingen/tentoonstelling">
+  <div class="mySlides fade">
+    <div id="black" class="numbertext">2 / 10</div>
+    <img class="slidesimg" src="../img/slide2.jpeg" style="width:100%">
+    <div id="black" class="text">Jenny</div>
+  </div>
+  </a>
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/3041567--Roeleveld/verzamelingen/tentoonstellingen">
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 10</div>
+    <img class="slidesimg" src="../img/Slide3.jpeg" style="width:100%">
+    <div class="text">Roeleveld</div>
+  </div>
+  </a>
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/2334447--Maikel-de-Jong/verzamelingen/tentoonstelling">
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img class="slidesimg" src="../img/slide4.jpeg" style="width:100%">
+    <div class="text">Maikel de Jong</div>
+  </div>
+  </a>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img class="slidesimg" src="../img/slide5.jpeg" style="width:100%">
+    <div class="text">Kunst kijken - CBS de Evenaar</div>
+  </div>
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/2090025--Erika/verzamelingen/tentoonstelling">
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 10</div>
+    <img class="slidesimg" src="../img/Slide6.jpeg" style="width:100%">
+    <div class="text">Erika</div>
+  </div>
+  </a>
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/1609664--Bart-Ankersmit/verzamelingen/tentoonstellingen">
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img class="slidesimg" src="../img/Slide7.jpeg" style="width:100%">
+    <div class="text">Bart Ankersmit</div>
+  </div>
+  </a>
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/140812--Rianne-Bekkers/verzamelingen/tentoonstelling">
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 10</div>
+    <img class="slidesimg" src="../img/Slide8.jpeg" style="width:100%">
+    <div class="text">Rianne Bekkers</div>
+  </div>
+  </a>
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/2702828--SamGoisb/verzamelingen/tentoonstelling">
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 10</div>
+    <img class="slidesimg" src="../img/Slide9.jpeg" style="width:100%">
+    <div class="text">SamGoisb</div>
+  </div>
+  </a>
+
+  <a href="https://www.rijksmuseum.nl/nl/rijksstudio/1982635--Pien-Kersten/verzamelingen/tentoonstelling">
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img class="slidesimg" src="../img/Slide10.jpeg" style="width:100%">
+    <div class="text">Pien Kersten</div>
+  </div>
+  </a>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i; 
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  
+}
+</script>
     </body>
 </html>
