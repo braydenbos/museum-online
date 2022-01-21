@@ -1,69 +1,127 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <script src="script.js"></script>
-    <title>Rijks Museum</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Rijks Museum</title>
 </head>
+
 <body>
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <div class="sidebar">
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
     <header> Menu</header>
     <a href="index.html" class="active">
-        <span>Main page</span>
+      <i class="fas fa-book"></i>
+      <span>MainPage</span>
     </a>
     <a href="silde.html">
-        <span>Tentoonstellingen</span>
+      <i class="fas fa-paint-brush"></i>
+      <span>Exhibitions</span>
+    </a>
+    <a href="route.html">
+      <i class="fas fa-map-signs"></i>
+      <span>InteractiveRoute</span>
+    </a>
+    <a href="geschiedenis.html">
+      <i class="fas fa-feather-alt"></i>
+      <span>History</span>
     </a>
     <a href="tijd.html">
-        <span>Openings tijden</span>
+      <i class="far fa-clock"></i>
+      <span>OpeningHours</span>
     </a>
     <a href="ratings.html">
-        <span>Reviews</span>
+      <i class="fas fa-users"></i>
+      <span>Reviews</span>
     </a>
     <a href="info.html">
-        <span>Contact info</span>
+      <i class="fas fa-info-circle"></i>
+      <span>ContactInfo</span>
     </a>
+  </div>
+  <nav>
+    <a href="../NL/index.html">NL</a>
+    <a class="Tickets" href="Tickets">Tickets</a>
+  </nav>
+  <section>
+    <div class="container">
+      <img id="frontimg" src="../img/RijksMuseum.png" alt="foto van het RijksMuseum">
+      <div class="title">
+        <h1>RIJKSMUSEUM</h1>
+      </div>
     </div>
-    <nav>
-        <a href="../NL/index.html">NL</a>
-        <a class="Tickets" href="Tickets">Tickets</a>
-    </nav>
-    <article>
-        <div class="container">
-            <img id="frontimg" src="../img/RijksMuseum.png" alt="foto van het RijksMuseum">
-          <div class="title">
-            <h1>RIJKSMUSEUM</h1>
-          </div>
-        </div>
-        <div class="geschiedenis">
-            <h2>History</h2>
-            <p>
-                On Nov 19, 1798,
-                the government decided to set up a national museum following the French example.
-                A 'prestige project' to stimulate the love for the country but also to preserve important objects.
-                On May 31, 1800, this National Art Gallery opened its doors for the first time in Huis Ten Bosch in The Hague.
-                With more than 200 paintings and historical objects,
-                partly from the collections of the stadtholder and partly from (discontinued) government institutions,
-                like the VOC. The first purchase, De Zwaan by Jan Asselijn,
-                cost 100 gulden and is still one of the highlights of the Rijksmuseum.
-                
-                With Willem I as new king from 1813,
-                the museum moved as 'Rijks Museum' together with the national print collection from The Hague to the Trippenhuis,
-                a 17th-century city palace on the Kloveniersburgwal.
-                To the director's dismay, many other collections were subsequently moved.
-                Objects from classical antiquity went to a new Museum of Antiquities in Leiden and objects and crafts were assigned to the Cabinet of Rarely, now established in The Hague.
-                In 1838 a separate museum for modern 19th-century art was opened in Paviljoen Welgelegen in Haarlem.
-                In contrast to the Napoleonic era, the Rijksmuseum received few major works.
-            </p>
-        </div>
-    </article>
+  </section>
+  <section class="slides">
+    <h2>
+        Exhibitions
+    </h2>
+    <a href="silde.html">
+      <figure id="plaatjes">
+      </figure>
+  </section>
+  </a>
+  <section class="route">
+    <h2>
+      Interactive Route
+    </h2>
+    <a href="route.html">
+      <figure>
+        <img id="map" src="../img/routemap.jpg" alt="plattegrond van het RijksMuseum">
+      </figure>
+    </a>
+  </section>
+  <footer>
+      <a class="sociallink" href="https://www.instagram.com/rijksmuseum/">
+        <button class="socialmedia">
+          <i class="fab fa-instagram"></i>
+          Instagram
+        </button>
+      </a>
+      <a class="sociallink" href="https://twitter.com/rijksmuseum">
+        <button class="socialmedia">
+          <i class="fab fa-twitter"></i>
+          Twitter
+        </button>
+      </a>
+      <a class="sociallink" href="https://www.youtube.com/channel/UCEXuPfYt1M3e8DT1LDeSfVg">
+        <button class="socialmedia">
+          <i class="fab fa-youtube"></i>
+          YouTube
+        </button>
+      </a>
+      <a class="sociallink" href="https://www.tiktok.com/@rijksmuseum">
+        <button class="socialmedia">
+          <i class="fab fa-tiktok"></i>
+          TikTok
+        </button>
+      </a>
+      <a class="sociallink" href="https://www.facebook.com/rijksmuseum/">
+        <button class="socialmedia">
+          <i class="fab fa-facebook"></i>
+          Facebook
+        </button>
+      </a>
+      <a class="sociallink" href="https://www.linkedin.com/company/rijksmuseum">
+        <button class="socialmedia">
+          <i class="fab fa-linkedin"></i>
+          Linkedin
+        </button>
+      </a>
+      <a class="sociallink" href="info.html">
+        <button class="infoc">
+          <i class="fas fa-info-circle"></i>
+          ContactInfo
+        </button>
+      </a>
+  </footer>
 </body>
+
 </html>
