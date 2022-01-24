@@ -210,37 +210,37 @@ h3{
 
 @keyframes fotoslider {
   0%{
-    background-image: url("../img/Slides1.jpeg");
+    background-image: url("../img/Slide1.jpeg");
   }
   10%{
-    background-image: url("../img/Slides2.jpeg");
+    background-image: url("../img/Slide2.jpeg");
   }
   20%{
-    background-image: url("../img/Slides3.jpeg");
+    background-image: url("../img/Slide3.jpeg");
   }
   30%{
-    background-image: url("../img/Slides4.jpeg");
+    background-image: url("../img/Slide4.jpeg");
   }
   40%{
-    background-image: url("../img/Slides5.jpeg");
+    background-image: url("../img/Slide5.jpeg");
   }
   50%{
-    background-image: url("../img/Slides6.jpeg");
+    background-image: url("../img/Slide6.jpeg");
   }
   60%{
-    background-image: url("../img/Slides7.jpeg");
+    background-image: url("../img/Slide7.jpeg");
   }
   70%{
-    background-image: url("../img/Slides8.jpeg");
+    background-image: url("../img/Slide8.jpeg");
   }
   80%{
-    background-image: url("../img/Slides9.jpeg");
+    background-image: url("../img/Slide9.jpeg");
   }
   90%{
-    background-image: url("../img/Slides10.jpeg");
+    background-image: url("../img/Slide10.jpeg");
   }
   100%{
-    background-image: url("../img/Slides1.jpeg");
+    background-image: url("../img/Slide1.jpeg");
   }
 }
 
