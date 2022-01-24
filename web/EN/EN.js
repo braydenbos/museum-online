@@ -13,17 +13,16 @@ let current_index = 0;
 let lokaties =//Array
 [
     {//0 =object
-        "titel":"De Voorhal 0",
+        "titel":"The Vestibule 0",
         "image":"../img/route/plaats0.jpg",
         "directions": {
             "noord": 7,
             "oost": 1,
-            "zuid":1 ,
             "west": 12
         }
     },
     {//1 =object
-        "titel":"Franse Hoekzaal 1",
+        "titel":"The French room 1",
         "image":"../img/route/plaats1.jpg",
         "directions": {
             "noord": 2,
@@ -31,7 +30,7 @@ let lokaties =//Array
         }
     },
     {//2 =object
-        "titel":"Het Herenhuis 2",
+        "titel":"The mansion 2",
         "image":"../img/route/plaats2.jpg",
         "directions": {
             "noord": 3,
@@ -48,7 +47,7 @@ let lokaties =//Array
         }
     },
     {//4 =object
-        "titel":"Bibliotheek 4",
+        "titel":"Library 4",
         "image":"../img/route/plaats4.JPG",
         "directions": {
             "zuid": 3
@@ -72,7 +71,7 @@ let lokaties =//Array
         }
     },
     {//7 =object
-        "titel":"Het melkmeisje 7",
+        "titel":"The Milkmaid 7",
         "image":"../img/route/plaats7.jpg",
         "directions": {
             "noord": 6,
@@ -88,7 +87,7 @@ let lokaties =//Array
         }
     },
     {//9 =object
-        "titel":"Vlaamse invloed 9",
+        "titel":"Flemish influence 9",
         "image":"../img/route/plaats9.jpg",
         "directions": {
             "noord": 8,
@@ -104,7 +103,7 @@ let lokaties =//Array
         }
     },
     {//11 =object
-        "titel":"Schilderkunst 11",
+        "titel":"Paintings 11",
         "image":"../img/route/plaats11.jpg",
         "directions": {
             "oost": 12,
@@ -112,7 +111,7 @@ let lokaties =//Array
         }
     },
     {//12 =object
-        "titel":"Shilderkunst 12",
+        "titel":"Paintings 12",
         "image":"../img/route/plaats12.jfif",
         "directions": {
             "oost": 0,
