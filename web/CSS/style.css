@@ -122,6 +122,76 @@ article{
   width: 92,5%;
   margin:0 auto;
 }
+
+.rating{
+  *{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0 auto; 
+    max-width: 800px; 
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 25px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  .side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    .right {
+      display: none;
+    }
+  }
+
 #frontimg{
   border: solid 7px rgb(48, 48, 48);
   margin-top: 10px;
@@ -384,9 +454,34 @@ border: solid 7px black;
   }
 }
 
-.route,.slides,.geschiedenisTitle{
+.route,.slides,.geschiedenisTitle,.tijden{
   margin: 0 auto;
   width: 92.5%;
+}
+
+.tijden1{
+  color: white;
+  padding: 25px ;
+  margin: 0 auto;
+  width: 600px;
+  background-color: darkgray;
+  border: solid black 3px;
+  border-radius: 10px;
+  font-size: 180%;
+  display: flex;
+}
+
+.tijden1 > ul > ul,.ul{
+  padding: 15px 0 15px;
+  color: rgb(21, 131, 233);
+}
+
+.ul {
+  color: darkgray;
+}
+
+.tijden1 > ul{
+  width: 100%;
 }
 
 #map{
