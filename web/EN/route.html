@@ -11,47 +11,64 @@
 </head>
 
 <body>
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <div class="sidebar">
-        <header> Menu</header>
-        <a href="index.html">
-          <i class="fas fa-book"></i>
-          <span>MainPage</span>
-        </a>
-        <a href="silde.html">
-          <i class="fas fa-paint-brush"></i>
-          <span>Exhibitions</span>
-        </a>
-        <a href="route.html" class="active">
-          <i class="fas fa-map-signs"></i>
-          <span>InteractiveRoute</span>
-        </a>
-        <a href="geschiedenis.html">
-          <i class="fas fa-feather-alt"></i>
-          <span>History</span>
-        </a>
-        <a href="tijd.html">
-          <i class="far fa-clock"></i>
-          <span>OpeningHours</span>
-        </a>
-        <a href="ratings.html">
-          <i class="fas fa-users"></i>
-          <span>Reviews</span>
-        </a>
-        <a href="info.html">
-          <i class="fas fa-info-circle"></i>
-          <span>ContactInfo</span>
-        </a>
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header> Menu</header>
+    <a href="index.html">
+      <i class="fas fa-book"></i>
+      <span>MainPage</span>
+    </a>
+    <a href="silde.html">
+      <i class="fas fa-paint-brush"></i>
+      <span>Exhibitions</span>
+    </a>
+    <a href="route.html" class="active">
+      <i class="fas fa-map-signs"></i>
+      <span>InteractiveRoute</span>
+    </a>
+    <a href="geschiedenis.html">
+      <i class="fas fa-feather-alt"></i>
+      <span>History</span>
+    </a>
+    <a href="tijd.html">
+      <i class="far fa-clock"></i>
+      <span>OpeningHours</span>
+    </a>
+    <a href="ratings.html">
+      <i class="fas fa-users"></i>
+      <span>Reviews</span>
+    </a>
+    <a href="info.html">
+      <i class="fas fa-info-circle"></i>
+      <span>ContactInfo</span>
+    </a>
+  </div>
+  <nav>
+    <a href="../NL/route.html">NL</a>
+    <a class="Tickets" href="Tickets">Tickets</a>
+  </nav>
+  <div id="container2">
+    <div class="column">
+      <img id="myimage" src="img/0.jpg" alt="foto display">
+    </div>
+    <div class="column">
+      <img id="map2" src="../img/routemap.png" alt="Map van de tweede verdieping van het rijksmuseum">
+    </div>
+    <div id="myinteraction">
+      <h2 id="mytitle"></h2>
+      <h3 id="nav">Choose what direction you want to go to:</h3>
+      <div>
+        <button id="KnopNoord" onclick="goDirection('noord')">Up</button>
+        <button id="KnopWest" onclick="goDirection('west')">Left</button><button id="KnopOost"onclick="goDirection('oost')">Right</button>
+        <button id="KnopZuid" onclick="goDirection('zuid')">Down</button>
       </div>
-        <article>
-        <nav>
-            <a href="../NL/route.html">NL</a>
-            <a class="Tickets" href="Tickets">Tickets</a>
-        </nav>
+    </div>
+  </div>
+  <script src="EN.js"></script>
 </body>
 
 </html>

@@ -47,30 +47,30 @@
             <span>ContactInfo</span>
         </a>
     </div>
-    <article>
-        <nav>
-            <a href="../EN/route.html">EN</a>
-            <a class="Tickets" href="Tickets">Tickets</a>
-        </nav>
-        <div id="container2">
-            <div class="column">
-                <img id="myimage" src="img/0.jpg" height="600px" alt="foto display">
-            </div>
-            <div class="column">
-                <img id="map2" src="../img/routemap.png" alt="Map van de tweede verdieping van het rijksmuseum">
-            </div>
-            <div id="myinteraction">
-                <h2 id="mytitle">plaats 0</h2>
-                <h3 id="nav">kies welke richting je op wilt:</h3>
-                <div>
-                    <button id="KnopNoord" onclick="goDirection('noord')">Boven</button>
-                    <button id="KnopWest" onclick="goDirection('west')">Links</button><button id="KnopOost"
-                        onclick="goDirection('oost')">Rechts</button>
-                    <button id="KnopZuid" onclick="goDirection('zuid')">Onder</button>
-                </div>
+    <nav>
+        <a href="../EN/route.html">EN</a>
+        <a class="Tickets" href="Tickets">Tickets</a>
+    </nav>
+    <div id="container2">
+        <div class="column">
+            <img id="myimage" src="img/0.jpg" alt="foto display">
+        </div>
+        <div class="column">
+            <img id="map2" src="../img/routemap.png" alt="Map van de tweede verdieping van het rijksmuseum">
+        </div>
+        <div id="myinteraction">
+            <h2 id="mytitle"></h2>
+            <h3 id="myplace"></h2>
+            <h3 id="nav">Kies welke richting je op wilt:</h3>
+            <div>
+                <button id="KnopNoord" onclick="goDirection('noord')">Boven</button>
+                <button id="KnopWest" onclick="goDirection('west')">Links</button><button id="KnopOost"
+                    onclick="goDirection('oost')">Rechts</button>
+                <button id="KnopZuid" onclick="goDirection('zuid')">Onder</button>
             </div>
         </div>
-        <script src="script.js"></script>
+    </div>
+    <script src="NL.js"></script>
 </body>
 
 </html>
