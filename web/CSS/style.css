@@ -6,11 +6,16 @@
     text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     font-size: 16px;
     width: 100%;
     font-family: sans-serif;
     background-color: #34568B;
+    overflow-x: hidden;
 }
 
 .sidebar{
@@ -118,8 +123,13 @@ nav a {
   font-size: 30px;
   border-left: 3px solid black;
 }
+
+img{
+  width: 92.5%;
+}
+
 article{
-  width: 92,5%;
+  width: 92.5%;
   margin:0 auto;
 }
 
@@ -193,19 +203,14 @@ article{
   }
 
 #frontimg{
-  border: solid 7px rgb(48, 48, 48);
-  margin-top: 10px;
-  border-radius: 20px;
+  width: 100%;
+  border-bottom: solid 7px rgb(48, 48, 48);
 }
 .Tickets{
   background-color: rgb(94, 148, 179);
 }
 h1{
   font-size: 9vw;
-}
-
-img{
-  width: 92.5%;
 }
 
 p{
@@ -232,7 +237,8 @@ h3{
   padding: 20px 85px;
   position: relative;
   margin:0 auto;
-  border-radius: 3px solid black;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 
 .geschiedenisvlak1{
@@ -262,13 +268,13 @@ h3{
 
 .title {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .slidebackground{
-background-color: rgb(199, 199, 199);
+background-color: rgb(231, 231, 231);
 margin: 0 auto 10px;
 width: 75vw;
 height: 50vw;
@@ -549,7 +555,8 @@ border: solid 7px black;
   width: 100%;
   text-align: center;
 }
-#black{
+
+#black, #black2{
   color: black;
 }
 
@@ -572,7 +579,7 @@ border: solid 7px black;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot:hover {
   background-color: #717171;
 }
 
@@ -617,7 +624,7 @@ border: solid 7px black;
 }
 
 #container2{
-  background-color: wheat;
+  background-color: #222831;
   width: 60.4vw;
   height: 50.4vw;
   margin:25px auto;
@@ -637,14 +644,18 @@ border: solid 7px black;
   display: table;
 }
 
+#myimage{
+  border-right: solid 5px black;
+}
+
 #myimage, #map2{
   border-bottom: solid 5px black;
   height: 19.85vw;
-  width: 30vw;
+  width: 29.9vw;
   object-fit: cover;
 }
 #mytitle{
-  color: black;
+  color: white;
   border-bottom: none;
   font-size: 4vw;
 }
@@ -653,15 +664,20 @@ border: solid 7px black;
   display: block;
 }
 #nav{
-  color: #1b1b1b;
+  color: darkgray;
   margin-bottom: 5vw;
 }
 
 div button{
-  background-color: brown;
+  background-color: rgb(94, 148, 179);
   color: white;
   padding: 10px;
 }
+
+div button:hover{
+  cursor: pointer;
+}
+
 #KnopNoord, #KnopZuid{
   border-bottom-right-radius: 20px;
   border-bottom-left-radius:  20px;
@@ -691,42 +707,87 @@ border-top-left-radius:  20px;
 }
 
 footer{
+  justify-content: space-between;
   display: flex;
   margin-top: 9px;
   bottom: 0;
   background-color: #262626;
-  padding: 10px;
   width: 100%;
+  font-size: 200%;
 }
-.socialmedia,.infoc{
-  text-align: left;
-  display: block;
-  margin: 10px;
-  padding: 10px 5px;
-  width: 210px;
-  height: 100px;
-  background-color: #262626;
+.footerNavigation{
+  list-style: none;
+}
+
+footer>ul div{
+  border: solid 2px  white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-style: italic;
+  background-color: transparent;
   color: white;
-  border: solid white 2px;
-  font-size: 30px;
-  border-radius: 10px;
-  cursor:pointer;
+  text-decoration: none;
 }
-.infoc{
+
+footer>ul .lastli{
+  margin: 0;
+}
+
+footer>ul a:hover{
+  border:none;
+}
+
+footer>ul div:hover{
+  border: solid 2px  black;
   background-color: white;
-  color: #1b1b1b;
+  color: black;
+  cursor: pointer;
 }
 
-.sociallink.active,.sociallink:hover{
-  border-left: none;
+.contactinfo{
+  color: white;
+  list-style: none;
+}
+li{
+  list-style: none;
+}
+footer ul{
+  padding: 10px 60px;
 }
 
-footer > p{
-  width: 90vw;
-  margin: 0 auto;
-  padding-left: 40px;
+footer ul a{
+  color: darkgray;
 }
-@media screen and (max-width:1050px) {
+
+footer ul a:hover{
+  color: gray;
+}
+
+@media screen and (max-width:1650px) {
+  .title{
+    font-size: 30vw;
+  }
+  .container{
+    height: 100vh;
+  }
+  #frontimg{
+    object-fit: cover;
+    height: 100%;
+  }
+  footer{
+    display: inline-block;
+    font-size: 130%;
+  }
+  .footerNavigationItem{
+    width: 150px;
+  }
+  footer ul{
+    padding: 10px;
+  }
+  .socials{
+    display: inline-table;
+  }
   #KnopWest,#KnopNoord,#KnopOost,#KnopZuid{
     height: 70px;
   }  
@@ -774,16 +835,35 @@ footer > p{
     width: 90vw;
   }
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:760px) {
+  label #btn{
+    height: 70px;
+    width: 70px ;
+    font-size: 50px;
+    padding-top: 12px;
+  }
+  nav{
+    height:100px;
+  }
   #KnopWest,#KnopNoord,#KnopOost,#KnopZuid{
     height: 66px;
     font-size: 6vw;
+  }
+  h2{
+    margin-bottom: 10px;
   }  
   #mytitle{
-    font-size: 7vw;
+    font-size: 10vw;
+  }
+  #map,#plaatje,.slidebackground{
+    width: 100%;
+    height: 250px;
   }
   #nav{
     font-size: 6vw;
+  }
+  nav a {
+    padding: 31px;
   }
   .column {
     width: 100%;
