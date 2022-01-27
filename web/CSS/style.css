@@ -129,7 +129,7 @@ img{
 }
 
 article{
-  width: 92,5%;
+  width: 92.5%;
   margin:0 auto;
 }
 #frontimg{
@@ -167,7 +167,8 @@ h3{
   padding: 20px 85px;
   position: relative;
   margin:0 auto;
-  border-radius: 3px solid black;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 
 .geschiedenisvlak1{
@@ -203,7 +204,7 @@ h3{
 }
 
 .slidebackground{
-background-color: rgb(199, 199, 199);
+background-color: rgb(231, 231, 231);
 margin: 0 auto 10px;
 width: 75vw;
 height: 50vw;
@@ -617,6 +618,7 @@ footer{
   bottom: 0;
   background-color: #262626;
   width: 100%;
+  font-size: 200%;
 }
 .footerNavigation{
   list-style: none;
@@ -627,7 +629,6 @@ footer>ul div{
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
-  font-size: 100%;
   font-style: italic;
   background-color: transparent;
   color: white;
@@ -668,7 +669,30 @@ footer ul a:hover{
   color: gray;
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1650px) {
+  .title{
+    font-size: 30vw;
+  }
+  .container{
+    height: 100vh;
+  }
+  #frontimg{
+    object-fit: cover;
+    height: 100%;
+  }
+  footer{
+    display: inline-block;
+    font-size: 130%;
+  }
+  .footerNavigationItem{
+    width: 150px;
+  }
+  footer ul{
+    padding: 10px;
+  }
+  .socials{
+    display: inline-table;
+  }
   #KnopWest,#KnopNoord,#KnopOost,#KnopZuid{
     height: 70px;
   }  
@@ -716,16 +740,35 @@ footer ul a:hover{
     width: 90vw;
   }
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:760px) {
+  label #btn{
+    height: 70px;
+    width: 70px ;
+    font-size: 50px;
+    padding-top: 12px;
+  }
+  nav{
+    height:100px;
+  }
   #KnopWest,#KnopNoord,#KnopOost,#KnopZuid{
     height: 66px;
     font-size: 6vw;
+  }
+  h2{
+    margin-bottom: 10px;
   }  
   #mytitle{
-    font-size: 7vw;
+    font-size: 10vw;
+  }
+  #map,#plaatje,.slidebackground{
+    width: 100%;
+    height: 250px;
   }
   #nav{
     font-size: 6vw;
+  }
+  nav a {
+    padding: 31px;
   }
   .column {
     width: 100%;
