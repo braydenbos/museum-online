@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     font-size: 16px;
     width: 100%;
@@ -119,24 +123,24 @@ nav a {
   font-size: 30px;
   border-left: 3px solid black;
 }
+
+img{
+  width: 92.5%;
+}
+
 article{
   width: 92,5%;
   margin:0 auto;
 }
 #frontimg{
-  border: solid 7px rgb(48, 48, 48);
-  margin-top: 10px;
-  border-radius: 20px;
+  width: 100%;
+  border-bottom: solid 7px rgb(48, 48, 48);
 }
 .Tickets{
   background-color: rgb(94, 148, 179);
 }
 h1{
   font-size: 9vw;
-}
-
-img{
-  width: 92.5%;
 }
 
 p{
@@ -193,7 +197,7 @@ h3{
 
 .title {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -455,7 +459,8 @@ border: solid 7px black;
   width: 100%;
   text-align: center;
 }
-#black,#balck2{
+
+#black, #black2{
   color: black;
 }
 
@@ -606,41 +611,63 @@ border-top-left-radius:  20px;
 }
 
 footer{
+  justify-content: space-between;
   display: flex;
   margin-top: 9px;
   bottom: 0;
   background-color: #262626;
-  padding: 10px;
   width: 100%;
 }
-footer > a,.infoc{
-  text-align: left;
-  display: block;
-  margin: 10px;
-  padding: 10px 5px;
-  width: 210px;
-  height: 100px;
-  background-color: #262626;
+.footerNavigation{
+  list-style: none;
+}
+
+footer>ul div{
+  border: solid 2px  white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 100%;
+  font-style: italic;
+  background-color: transparent;
   color: white;
-  border: solid white 2px;
-  font-size: 30px;
-  border-radius: 10px;
-  cursor:pointer;
+  text-decoration: none;
 }
-.infoc{
+
+footer>ul .lastli{
+  margin: 0;
+}
+
+footer>ul a:hover{
+  border:none;
+}
+
+footer>ul div:hover{
+  border: solid 2px  black;
   background-color: white;
-  color: #1b1b1b;
+  color: black;
+  cursor: pointer;
 }
 
-.sociallink.active,.sociallink:hover{
-  border-left: none;
+.contactinfo{
+  color: white;
+  list-style: none;
+}
+li{
+  list-style: none;
+}
+footer ul{
+  padding: 10px 60px;
 }
 
-footer > p{
-  width: 90vw;
-  margin: 0 auto;
-  padding-left: 40px;
+footer ul a{
+  color: darkgray;
 }
+
+footer ul a:hover{
+  color: gray;
+}
+
 @media screen and (max-width:1050px) {
   #KnopWest,#KnopNoord,#KnopOost,#KnopZuid{
     height: 70px;
